@@ -91,7 +91,6 @@ bitset<64> decrypt(bitset<64> state,bitset<80> key)
 }
 int main()
 {
-
     bitset<64> plain = 0;
     bitset<80> key = 0;
     bitset<64> chiper = encrypt(plain,key);
