@@ -1,4 +1,4 @@
-# PRESENT-Chiper
+# PRESENT-Cipher
 implement of PRESENT chiper by c++
 
 64 bits plain and 80 bits key
