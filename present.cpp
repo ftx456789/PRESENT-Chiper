@@ -89,13 +89,20 @@ bitset<64> decrypt(bitset<64> state,bitset<80> key)
     addRoundKey(state,k[0]);
     return state;
 }
+void Printhex(bitset<64> state)
+{
+    for(int i=15; i>=0; i--)
+        printf("%x",((state[i*4+3]<<3)+(state[i*4+2]<<2)+(state[i*4+1]<<1)+state[i*4]));
+    printf("\n");
+}
 int main()
 {
     bitset<64> plain = 0;
     bitset<80> key = 0;
-    bitset<64> chiper = encrypt(plain,key);
-    cout<<chiper<<endl;
-    cout<<decrypt(chiper,key)<<endl;
+    bitset<64> cipher = encrypt(plain,key);
+    cout<<cipher<<endl;
+    Printhex(cipher);
+    cout<<decrypt(cipher,key)<<endl;
     return 0;
 }
 //5579c1387b228445
