@@ -1,5 +1,5 @@
 # PRESENT-Cipher
-implement of PRESENT chiper by c++
+implement of PRESENT cipher by c++
 
 64 bits plain and 80 bits key
 
